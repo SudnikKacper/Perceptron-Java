@@ -47,27 +47,30 @@ public class Algorytm {
     }
 
     // uczy się i określa nową tetę i wagi dla każdego vektora
+    //aktualizuje wagi perceptronu i bias w taki sposób, aby zminimalizować błąd klasyfikacji na zestawie danych wejściowych.
     public void ucz() {
-        for (int i = 0; i < epoki; i++) {
+        for (int i = 0; i < epoki; i++) { //Iteracja epok
             int errors = 0;
 
             for (Vektor v : trainingArray) {
-                int actualDeterminant = 0, writtenDeterminant = ewaluacja(v);
+                int actualDeterminant = 0, writtenDeterminant = ewaluacja(v); //obliczamy determinante
 
                 for (Map.Entry<String, Integer> e : LoadCSV.wynik.entrySet())
                     if (e.getKey().equals(v.getName()))
                         actualDeterminant = e.getValue();
 
-                int error = actualDeterminant - writtenDeterminant;
+                int error = actualDeterminant - writtenDeterminant; //błąd klasyfikacji
 
                 errors += error;
 
 
+
+                //na podstawie błędu i alfa aktualizuję wagi
                 for (int j = 0; j < LoadCSV.length; j++) {
                     weights[j] += alpha * v.getPoints()[j] * error;
                 }
 
-                this.theta += errors * alpha;
+                this.theta += errors * alpha; // aktualizuja bias
 
             }
             if (errors == 0) break;
@@ -80,8 +83,10 @@ public class Algorytm {
         double total = 0, found = 0;
         System.out.println("Jak powinno być [wymiary] -> wynik");
         for (Vektor v : testArray) {
-            actualDeterminant = ewaluacja(v);
+            actualDeterminant = ewaluacja(v);   //Obliczamy wartość wyjścia (determinanty)
 
+
+            //Przechodzimy przez mapę "LoadCSV.wynik", aby znaleźć nazwę gatunku, którego determinant odpowiada wartości wyjściowej (actualDeterminant) i przypisujemy ją do zmiennej "gatunek".
             String gatunek= null;
             for (Map.Entry<String, Integer> e : LoadCSV.wynik.entrySet())
                 if (actualDeterminant == e.getValue())

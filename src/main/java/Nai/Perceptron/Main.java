@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static final Algorytm a = new Algorytm(0.01, 10000, "iris");
+    private static final Algorytm a = new Algorytm(0.01, 10000, "wdbc");
 
     public static void main(String[] args) throws IOException {
 
@@ -21,7 +21,7 @@ public class Main {
         a.ucz();
         a.run(true);
 
-        while (a.acc < 0.95){
+        while (a.acc < 0.96){
             a.ucz();
             a.run(true);
         }

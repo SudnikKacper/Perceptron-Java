@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f06986-30f4-4abf-806f-d867aa18343e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/iris.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/iris.test.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/perceptron.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/perceptron.test.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/wdbc.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/wdbc.test.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Algorytm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/LoadCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Vektor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Algorytm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Algorytm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Nai/Perceptron/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +76,12 @@
       <option name="presentableId" value="Default" />
       <updated>1680446036615</updated>
       <workItem from="1680446037807" duration="12267000" />
-      <workItem from="1680466518277" duration="3420000" />
+      <workItem from="1680466518277" duration="4672000" />
+      <workItem from="1680471222040" duration="45000" />
+      <workItem from="1680471429300" duration="564000" />
+      <workItem from="1680519198607" duration="34000" />
+      <workItem from="1680524846282" duration="1779000" />
+      <workItem from="1680544366046" duration="19000" />
     </task>
     <servers />
   </component>
@@ -107,5 +98,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Nai/Perceptron/Algorytm.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
